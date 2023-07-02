@@ -1,0 +1,680 @@
+@media(prefers-color-scheme:dark) {
+
+    :root {
+        --body: #313131;
+        --main-color: #fff;
+        --reklama: #0C0C0C;
+        --text: #313131;
+    }
+
+    .header__logo::before {
+        content: url(../img/Logo2.png);
+    }
+
+    .playstation__logo:before {
+        content: url(../img/playstationlogo.png);
+    }
+}
+
+@media(max-width:1190px) {
+    .playstation__title {
+        font-size: 42px;
+    }
+
+    .carousel__img {
+        height: 420px;
+    }
+
+    .carousel-indicators {
+        margin-right: 24px;
+        margin-bottom: 18px;
+    }
+
+    .playstation__content {
+        min-height: 450px;
+    }
+
+    .airpods__grid {
+        grid-column-gap: 14px;
+        grid-row-gap: 27px;
+    }
+
+    .airpods__txt {
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    .airpods__text-right {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .phone__card {
+        max-width: 206px;
+        width: 100%;
+    }
+
+    .phone__block {
+        padding-bottom: 12px;
+    }
+
+    .laptop__text {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .seller__text {
+        font-size: 15px;
+    }
+
+    .playstation__img {
+        margin-right: -85px;
+    }
+
+    .playstation__title {
+        font-size: 34px;
+    }
+
+    .footer__icon {
+        margin-left: 32px;
+    }
+}
+
+@media(max-width:990px) {
+
+    .phone__content,
+    .seller__content,
+    .footer__content,
+    .laptop__content {
+        flex-wrap: wrap;
+    }
+
+    .seller__content,
+    .phone__content,
+    .laptop__content {
+        row-gap: 20px;
+    }
+
+    .container {
+        max-width: 886px;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        column-gap: 20px;
+    }
+
+    .header__content-bottom>.navbar-brand {
+        margin-right: 1rem;
+    }
+
+    .carousel__img {
+        width: 100% !important;
+        height: 540px;
+    }
+
+    .carousel-indicators {
+        left: 0;
+        text-align: center;
+        bottom: -16px;
+        margin-right: 14%;
+    }
+
+    .header__battom>.container>.row {
+        justify-content: center;
+    }
+
+    .header__nav>.nav {
+        flex-wrap: wrap;
+    }
+
+    .header__content-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 90px;
+    }
+
+    .airpods {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .playstation__content {
+        padding-left: 0;
+    }
+
+    .playstation__content {
+        max-width: 866px;
+        min-height: 452px !important;
+    }
+
+    .footer {
+        padding-top: 51px;
+    }
+
+    .footer__content {
+        justify-content: flex-start;
+    }
+
+    .footer__icon {
+        margin-left: 0;
+        margin-top: 54px;
+    }
+
+    ol,
+    ul {
+        padding-left: 0 !important;
+    }
+}
+
+@media(max-width:767px) {
+    .airpods__grid {
+        padding: 20px;
+    }
+
+    .airpods__item:nth-of-type(1) {
+        grid-area: 1 / 1 / 3 / 5;
+        height: 500px;
+    }
+
+    .airpods__item:nth-of-type(2) {
+        grid-area: 3/ 1 / 3 / 5;
+    }
+
+    .airpods__item:nth-of-type(3) {
+        grid-area: 4/ 1 / 4 / 3;
+    }
+
+    .airpods__item:nth-of-type(4) {
+        grid-area: 4/ 5 / 4 / 3;
+    }
+
+    .header__content-bottom {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: 20px;
+        row-gap: 27px;
+    }
+
+    .playstation__content {
+        max-width: 742px;
+        min-height: 357px !important;
+    }
+
+    .footer__icon {
+        margin-left: 32px;
+        margin-bottom: 11px;
+    }
+
+    .navbar {
+        padding: 20px 20px;
+    }
+}
+
+
+
+@media(max-width:600px) {
+    .footer__title {
+        margin-top: 40px;
+    }
+
+    .footer__icon {
+        margin-left: 0;
+    }
+
+    .header__content-bottom {
+        margin-right: 20px;
+    }
+
+    .carousel__img {
+        height: 385px;
+    }
+
+    .title {
+        font-size: 41px;
+    }
+
+    .airpods__item {
+        justify-content: center;
+    }
+
+    .playstation__content {
+        background: none;
+        margin-left: 40px;
+    }
+
+    .playstation__title {
+        margin-bottom: 40px;
+    }
+
+    .laptop__buttum {
+        margin-bottom: 10px;
+    }
+
+    .seller__text {
+        font-size: 19px;
+    }
+
+    .seller__price {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    .title {
+        margin-bottom: 45px;
+    }
+}
+
+@media(max-width:575px) {
+    .playstation__content {
+        max-width: 518px;
+    }
+
+    .navbar-brand {
+
+        margin-right: 0;
+    }
+
+    .header__content-bottom {
+        margin-left: 0;
+    }
+}
+
+/* @media(max-width:467px) */
+@media(max-width:425px) {
+    .header__input {
+        padding: 13px 9px;
+        width: 318px !important;
+    }
+
+    .header__btn {
+        font-size: 12px;
+        padding: 15px 5px;
+        max-width: 161px;
+    }
+
+    .header__tech {
+        margin-left: 3px;
+    }
+
+    .header__content-bottom {
+        margin-left: 0px;
+    }
+
+    .footer__input {
+        width: 250px;
+    }
+
+    .footer__btn {
+        width: 130px;
+        font-size: 16px;
+    }
+
+    .carousel__img {
+        height: 301px;
+    }
+
+    .carousel-indicators {
+        bottom: -25px;
+    }
+
+    .phone__card {
+        max-width: 240px;
+        text-align: center;
+    }
+
+    .playstation__content {
+        max-width: 351px;
+    }
+
+    .playstation__title {
+        font-size: 31px;
+    }
+
+    .playstation__content {
+        margin-left: 0;
+    }
+
+    .laptop__text {
+        font-size: 17px;
+
+    }
+
+    .laptop__price {
+        font-size: 16px;
+    }
+
+    .airpods__item:nth-of-type(1) {
+        height: 353px;
+    }
+
+    .airpods__item:nth-of-type(1)::before,
+    .airpods__item:nth-of-type(2)::before,
+    .airpods__item:nth-of-type(3)::before,
+    .airpods__item:nth-of-type(4)::before {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .airpods__text {
+        font-size: 24px;
+        line-height: 37px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .airpods__text,
+    .airpods__txt,
+    .airpods__text-right {
+        font-size: 18px;
+    }
+
+    .airpods__price {
+        font-size: 16px;
+        margin-top: 5px;
+        display: block;
+    }
+
+    .airpods__item:nth-of-type(2)::before {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .navbar {
+        padding: 20px 0px;
+    }
+
+    .navbar-brand {
+        margin-right: 0;
+    }
+
+    .header__link-bottom {
+        line-height: 22px;
+        margin-top: 20px;
+    }
+
+    .title {
+        font-size: 37px;
+    }
+
+    .phone__text {
+        font-size: 18px;
+    }
+
+    .carousel-indicators-dots {
+        width: 9px !important;
+        height: 9px !important;
+    }
+
+    .carousel-indicators {
+        column-gap: 12px;
+    }
+
+    .carousel-indicators-dots.active {
+        width: 12px !important;
+        height: 12px !important;
+    }
+
+    .header__link {
+        font-size: 14px;
+    }
+
+    .airpods__item:nth-of-type(1) {
+        height: 264px;
+    }
+
+
+    .airpods__item:nth-of-type(4) {
+        grid-area: 5/ 6 / 5 / 1;
+    }
+
+    .airpods__item:nth-of-type(3) {
+        grid-area: 4/ 1 / 4 / 6;
+    }
+
+    .airpods__item:nth-of-type(2) {
+        grid-area: 4/ 1 / 3 / 6;
+        height: 160px !important;
+    }
+
+    .airpods__item:nth-of-type(1) {
+        grid-area: 1 / 1 / 3 / 6;
+    }
+}
+
+@media(max-width:375px) {
+    .header__input {
+        width: 246px !important;
+        padding: 7px 5px;
+    }
+
+    .header__btn {
+        font-size: 10px;
+        padding: 6px 1px;
+        max-width: 123px;
+    }
+
+    .carousel__img {
+        height: 250px;
+    }
+
+    .carousel-indicators {
+        column-gap: 14px;
+    }
+
+    /* .airpods__item:nth-of-type(1) {
+        height: 264px;
+    }
+
+
+    .airpods__item:nth-of-type(4) {
+        grid-area: 5/ 6 / 5 / 1;
+    }
+
+    .airpods__item:nth-of-type(3) {
+        grid-area: 4/ 1 / 4 / 6;
+    }
+
+    .airpods__item:nth-of-type(2) {
+        grid-area: 4/ 1 / 3 / 6;
+        min-height: 160px;
+    }
+
+    .airpods__item:nth-of-type(1) {
+        grid-area: 1 / 1 / 3 / 6;
+    } */
+
+    .airpods__grid {
+        padding: 10px;
+    }
+
+    .footer__input {
+        width: 205px;
+    }
+
+    .header__link-bottom {
+        color: var(--main-color);
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .header__content-bottom {
+        margin-right: 0px;
+    }
+
+    .header-icon {
+        width: 15px;
+        height: 15px;
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .header__content-card {
+        margin-top: 50px;
+    }
+
+    .header__link {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .navbar {
+        padding: 15px 0px;
+    }
+
+    .footer__btn,
+    .footer__input {
+        height: 44px;
+    }
+
+    .seller__img {
+        height: 260px;
+    }
+}
+
+@media(max-width:360px) {
+    .header__link-bottom {
+        color: var(--main-color);
+        font-size: 15px;
+        line-height: 12px;
+    }
+
+    .laptop-title,
+    .seller-title,
+    .phone-title {
+        font-size: 30px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .playstation__content {
+        text-align: center;
+    }
+
+    .laptop__img {
+        position: relative;
+        width: 254px;
+        height: 254px;
+    }
+
+    .phone__img {
+        position: relative;
+        width: 290px;
+        height: 290px;
+    }
+
+    .seller__img {
+        height: 260px;
+        width: 260px;
+    }
+}
+
+@media(max-width:320px) {
+    .footer__input {
+        width: 190px;
+    }
+
+    .footer__btn {
+        width: 95px;
+        font-size: 16px;
+    }
+
+    .seller__img {
+        height: 230px;
+    }
+
+    .playstation__title {
+        font-size: 26px;
+    }
+
+    .playstation {
+        padding-bottom: 30px;
+    }
+
+    .airpods {
+        margin-bottom: 30px;
+    }
+
+    .header__input {
+        width: 180px !important;
+        padding: 7px 5px;
+        font-size: 11px;
+    }
+
+    .header__btn {
+        max-width: 119px;
+    }
+
+    .header__link-bottom {
+        font-size: 12px;
+        line-height: 3px;
+    }
+
+
+    .header__link {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .header__tech {
+        margin-left: 1px;
+        margin-right: 2px;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        column-gap: 12px;
+    }
+
+    .header__link>i {
+        margin-right: 3px;
+    }
+
+    .carousel__img {
+        height: 233px;
+    }
+
+    .carousel-inner {
+        padding-top: 38px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .header__content-btn {
+        padding: 10px 35px;
+    }
+
+    .airpods__text {
+        line-height: 14px;
+    }
+
+    .airpods__item {
+        min-height: 177px;
+    }
+
+    .airpods__item:nth-of-type(2) {
+        grid-area: 4/ 1 / 3 / 6;
+        height: 177px;
+    }
+
+    .airpods__text,
+    .airpods__txt,
+    .airpods__text-right {
+        font-size: 20px;
+    }
+
+    .all-btn {
+        padding: 11px 35px;
+    }
+
+    .footer__btn {
+        font-size: 14px;
+    }
+}

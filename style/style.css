@@ -1,0 +1,858 @@
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+.header__logo::before {
+    content: url(../img/logo-removebg.png);
+    cursor: pointer;
+}
+
+
+:root {
+    --reklama: #313131;
+    --font-b: 'Noto-Bold';
+    --main-color: #313131;
+    --font: 'Noto-Regular';
+    --text: #fff;
+    --body: #fff;
+    --text2: #fff;
+
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 2px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--body);
+}
+
+.header__top {
+    background: var(--reklama);
+}
+
+.header__content {
+    display: flex;
+}
+
+
+.header__link {
+    color: var(--text2);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.header__link>i {
+    margin-right: 4px;
+}
+
+.header__link:hover {
+    color: var(--text2);
+}
+
+.navbar-brand {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-right: 9rem;
+}
+
+.header__content-bottom {
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+    justify-content: space-around;
+}
+
+.carousel-inner {
+    padding-top: 50px;
+    /* filter: drop-shadow(-10px 5px 3px rgba(0, 0, 0, 0.25)); */
+}
+
+.navbar {
+    padding: 20px 0;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--text2);
+}
+
+.section-title {
+    position: relative;
+    width: max-content;
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background: var(--main-color);
+    width: 100%;
+    height: 4px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.header__input {
+    padding: 15px 10px;
+    width: 440px !important;
+    border: 1px solid var(--main-color);
+    border-radius: none;
+    background: var(--text);
+    color: var(--main-color);
+}
+
+.header__input:focus {
+    outline: none;
+}
+
+.header__input::placeholder {
+    color: var(--main-color);
+}
+
+.all-btn {
+    background: var(#313131);
+    text-align: center;
+    color: #FFFFFF;
+    padding: 12px 45px;
+}
+
+.all-btn:hover {
+    color: #FFFFFF;
+}
+
+.header__icon {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.header__btn {
+    font-family: var(--font);
+    font-size: 14px;
+    line-height: 19px;
+    padding: 15px 15px;
+    max-width: 190px;
+    width: 100%;
+    color: #FFFFFF;
+    border-radius: 0%;
+    border: 1px solid var(--main-color);
+    background: #313131;
+}
+
+.header__link-bottom {
+    color: var(--main-color);
+    font-size: 18px;
+    line-height: 70px;
+    font-family: var(--font);
+    position: relative;
+}
+
+.header__link-bottom::after {
+    content: '';
+    position: absolute;
+    background: #ED8E00;
+    /* border-top-left-radius: 23px;
+    border-top-right-radius: 23px; */
+    width: 0%;
+    height: 2px;
+    left: 0px;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.header__link-bottom:hover {
+    color: var(--main-color);
+}
+
+
+.header__nav {
+    padding-top: 11px;
+}
+
+.carousel__img {
+    width: 740px !important;
+    height: 570px;
+}
+
+
+.carousel-indicators-dots {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: #ABABAB !important;
+    opacity: 1 !important;
+    transition: 0.5s;
+}
+
+.carousel-indicators-dots.active {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 100%;
+    background-color: var(--main-color) !important;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 16px;
+    column-gap: 30px;
+    left: unset;
+}
+
+.title {
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 121px;
+    color: var(--main-color)
+}
+
+.header__content-card {
+    display: flex;
+    align-items: center;
+}
+
+.header__content-btn {
+    font-family: var(--font);
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    border: 1px solid var(--main-color);
+    background: #313131;
+}
+
+.airpods {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.airpods__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+}
+
+.airpods__item:nth-of-type(1) {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.header-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.airpods__item:nth-of-type(2) {
+    grid-area: 1 / 3 / 2 / 5;
+}
+
+.airpods__item:nth-of-type(2)::before {
+    content: '-30%';
+    font-family: var(--font);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background: #313131;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 70px;
+}
+
+.airpods__item:nth-of-type(1)::before {
+    font-family: var(--font);
+    content: '-57%';
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background: #313131;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 70px;
+}
+
+.airpods__item:nth-of-type(3) {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.airpods__item:nth-of-type(3)::before {
+    font-family: var(--font);
+    content: '-20%';
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background: #313131;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    bottom: 15px;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 70px;
+}
+
+.airpods__item:nth-of-type(4) {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.airpods__item:nth-of-type(4)::before {
+    font-family: var(--font);
+    content: '-10%';
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background: #313131;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    bottom: 15px;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 70px;
+
+}
+
+.airpods__item {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    min-height: 235px;
+    z-index: 1;
+}
+
+.airpods__block {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* .airpods__item::before {
+    content: '-57%';
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background: #313131;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+}  */
+
+.airpods__item::after {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #F9F9F9;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.airpods__banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+.airpods__text {
+    font-size: 24px;
+    line-height: 70px;
+    font-family: var(--font);
+    color: #313131;
+    margin-top: 15px;
+    margin-left: 20px;
+    letter-spacing: 0.05em;
+}
+
+.airpods__txt {
+    font-family: var(--font);
+    font-size: 24px;
+    line-height: 30px;
+    color: #313131;
+    margin-top: 15px;
+    margin-left: 20px;
+    letter-spacing: 0.05em;
+}
+
+.airpods__text-right {
+    font-family: var(--font);
+    font-size: 24px;
+    line-height: 35px;
+    color: #313131;
+    margin-top: 15px;
+    margin-left: 20px;
+    letter-spacing: 0.05em;
+}
+
+.airpods__price {
+    font-size: 24px;
+    line-height: 25px;
+    font-family: var(--font);
+    color: #313131;
+    font-style: normal;
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+.airpods__content {
+    font-family: var(--font);
+    /* padding-top: 15px;
+    padding-left: 20px; */
+    height: 100%;
+    width: 100%;
+    color: var(--main-color);
+    position: absolute;
+    z-index: 1;
+}
+
+.airpods__btn {
+    font-family: var(--font);
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    border: 1px solid var(--main-color);
+    display: inline-block;
+    margin-bottom: 70px;
+    background: #313131;
+}
+
+.airpods__buttum {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.phone__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    min-height: 300px;
+    background: var(--text);
+
+}
+
+.phone__img {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.phone__img::after {
+    content: '';
+    position: absolute;
+    background: radial-gradient(39.9% 39.9% at 50% 38.67%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+    width: 300px;
+    height: 35px;
+    left: 0;
+    bottom: 0;
+
+}
+
+.phone__content {
+    display: flex;
+    justify-content: space-around;
+    background: var(--text);
+
+}
+
+
+.iphone__title {
+    margin-bottom: 30px;
+}
+
+.phone-title {
+    font-family: var(--font);
+    font-style: normal;
+    font-size: 36px;
+    line-height: 49px;
+    color: var(--main-color);
+}
+
+.phone__text {
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--main-color);
+    margin-bottom: 5px;
+}
+
+.phone__btn {
+    font-family: var(--font);
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    border: 1px solid var(--main-color);
+    display: inline-block;
+    margin-bottom: 70px;
+    background: #313131;
+}
+
+.phone__price {
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--main-color);
+    font-family: var(--font);
+    margin-bottom: 28px;
+}
+
+.laptop {
+    background: var(--text);
+}
+
+.laptop__content {
+    display: flex;
+    justify-content: space-around;
+    background: var(--text);
+}
+
+.laptop__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.laptop-title {
+    font-family: var(--font);
+    font-style: normal;
+    font-size: 36px;
+    line-height: 49px;
+    color: var(--main-color);
+}
+
+.computer__title {
+    margin-bottom: 30px;
+}
+
+.laptop__btn {
+    font-family: var(--font);
+    width: 300px;
+    height: 230px;
+    font-size: 20px;
+    line-height: 70px;
+    color: var();
+    background: #313131;
+
+}
+
+.laptop__buttum {
+    margin-bottom: 83px;
+}
+
+.laptop__text {
+    color: var(--main-color);
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.laptop__img {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+
+.laptop__img::after {
+    position: absolute;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    width: 300px;
+    height: 230px;
+
+}
+
+
+
+.playstation__title {
+    color: var(--main-color);
+    font-size: 48px;
+    line-height: 65px
+}
+
+.laptop__price {
+    font-family: var(--font);
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+
+
+.playstation {
+    padding-bottom: 70px;
+}
+
+.playstation__content {
+    background: url(../img/playstaion-removebg.png) no-repeat center / cover;
+    max-width: 1290px;
+    min-height: 500px;
+    width: 100%;
+}
+
+
+
+.playstation__content {
+    padding-left: 20px;
+}
+
+
+.playstation__logo {
+    display: inline-block;
+    margin-top: 94px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.playstation__logo::before {
+    content: url(../img/playstation-logo.png);
+    font-size: 10px !important;
+}
+
+
+.playstation__title {
+    margin-bottom: 70px;
+}
+
+.playstation__btn {
+    font-family: var(--font);
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    border: 1px solid var(--main-color);
+    display: inline-block;
+    margin-bottom: 70px;
+    background: #313131;
+}
+
+.seller-title {
+    font-size: 36px;
+    line-height: 49px;
+    color: var(--main-color);
+    margin-bottom: 30px;
+
+}
+
+.seller {
+    padding-bottom: 30px;
+}
+
+.seller__content {
+    display: flex;
+    justify-content: space-around;
+    background: var(--text);
+}
+
+.seller__img {
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+}
+
+
+
+.seller__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seller__text {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--main-color);
+    font-family: var(--font);
+}
+
+.seller__price {
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--main-color);
+    font-family: var(--font);
+}
+
+.seller__bottom {
+    padding-bottom: 70px;
+}
+
+.seller__btn {
+    font-family: var(--font);
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    border: 1px solid var(--main-color);
+    display: inline-block;
+    margin-bottom: 70px;
+    background: #313131;
+}
+
+.footer {
+    background: var(--reklama);
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+
+.footer__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__title {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--text2);
+    font-family: var(--font);
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.footer__link {
+    color: var(--text2);
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.footer__input {
+    width: 330px;
+    height: 50px;
+    border: 1px solid #FFFFFF;
+    padding: 10px 10px;
+    outline: none;
+}
+
+.footer__blok {
+    display: flex;
+}
+
+.footer__logo::before {
+    content: url(../img/Logo2.png);
+}
+
+.footer__logo {
+    cursor: pointer;
+    width: 187px;
+    height: 64px;
+}
+
+.footer__content-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__btn {
+    border-radius: none;
+    border: 1px solid #FFFFFF;
+    width: 190px;
+    height: 50px;
+    background: #313131;
+    color: var(--text2);
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.footer__icon {
+    margin-top: 32px;
+    cursor: pointer;
+    column-gap: 9px;
+    display: flex;
+
+}
+
+.footer__icon-right {
+    transition: 0.3s;
+}
+
+.footer__icon-right:hover {
+    transform: translateY(-7px);
+}
+
+.footer__link:hover {
+    color: var(--text2);
+}
